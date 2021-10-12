@@ -161,6 +161,16 @@
     .education-description > h1{
         font-size: 2.5rem;
     }
+    
+    .education-details > h4 {
+        font-size: 1rem;
+        line-height: 126%;
+    }
+    
+    .education-details > h5 {
+        font-size: 0.95rem;
+        line-height: 126%;
+    }
 }
 
 @media screen and (max-width: 400px) {

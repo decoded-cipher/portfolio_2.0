@@ -1,68 +1,69 @@
 /* eslint-disable */
 import { BiShoppingBag, BiPencil } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
-import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
+// import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
+import { SiAdobephotoshop } from "react-icons/si";
+import { FaInternetExplorer,  FaChalkboardTeacher, FaConnectdevelop, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
 
  
 
 export const servicesData = [
-    // {
-    //     id: 1,
-    //     title: 'Marketing',
-    //     icon: <BiShoppingBag/>
-    // },
+    {
+        id: 1,
+        title: 'Web Design',
+        icon: <BsCodeSlash />
+    },
     {
         id: 2,
-        title: 'Content Writing',
-        icon: <BiPencil /> 
+        title: 'Graphic Design',
+        icon: <SiAdobephotoshop />
     },
     {
         id: 3,
-        title: 'Email Marketing',
-        icon: <AiOutlineMail />
+        title: 'IoT Projects',
+        icon: <FaConnectdevelop />
     },
     // {
     //     id: 4,
     //     title: 'Internet Research',
     //     icon: <FaInternetExplorer />
     // },
-    // {
-    //     id: 5,
-    //     title: 'Tutoring',
-    //     icon: <FaChalkboardTeacher />
-    // },
+    {
+        id: 5,
+        title: 'Community Mentoring',
+        icon: <FaChalkboardTeacher />
+    },
 
     {
         id: 6,
-        title: 'Web Design',
-        icon: <BsCodeSlash />
+        title: 'Creative Writing',
+        icon: <BiPencil /> 
     },
     {
         id: 7,
-        title: 'Photography',
-        icon: <FaCameraRetro />
+        title: 'Video Editing',
+        icon: <FaVideo />
     },
     // {
     //     id: 8,
     //     title: 'Pinterest Virtual Assistant',
     //     icon: <FaPinterest />
     // }, 
-    {
-        id: 9,
-        title: 'Video Editing',
-        icon: <FaVideo />
-    },
     // {
-    //     id: 10,
-    //     title: 'Data Entry', 
-    //     icon: <BsClipboardData />
+    //     id: 9,
+    //     title: 'Video Editing',
+    //     icon: <FaVideo />
     // },
     {
-        id: 11,
-        title: 'Ebook Writing',
-        icon: <FaTabletAlt />
+        id: 10,
+        title: 'Technical Documentation', 
+        icon: <BsClipboardData />
     },
+    // {
+    //     id: 11,
+    //     title: 'Technical Documentation',
+    //     icon: <FaTabletAlt />
+    // },
     // {
     //     id: 12,
     //     title: 'Audio Transcription',
