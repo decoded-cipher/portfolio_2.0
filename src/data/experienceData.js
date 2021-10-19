@@ -1,15 +1,15 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'GTech µLearn',
-        jobtitle: 'Creative Lead | Media',
+        company: 'Hackclub KJCMT',
+        jobtitle: 'Founder & Lead',
         startYear: 'Aug 2021',
         endYear: 'Present'
     },
     {
         id: 2,
-        company: 'Hackclub KJCMT',
-        jobtitle: 'Founder & Lead',
+        company: 'GTech µLearn',
+        jobtitle: 'Creative Lead | Media',
         startYear: 'Aug 2021',
         endYear: 'Present'
     },
