@@ -99,8 +99,8 @@
 }
 
 .achievecard-details1 p {
-    font-size: 1.10rem;
-    font-family: Roboto;
+    font-size: 0.90rem;
+    font-family: var(--primaryFont);
     font-weight: 400;
 }
 
@@ -188,7 +188,7 @@
     }
 
     .achievecard-details1 p {
-        font-size: 0.95rem;
+        font-size: 0.80rem;
     }
 
     .achievecard-details2 {
@@ -227,7 +227,7 @@
     }
 
     .achievecard-details1 p {
-        font-size: 0.95rem;
+        font-size: 0.80rem;
     }
     .achievecard-imgcontainer > img {
         width: 70px;

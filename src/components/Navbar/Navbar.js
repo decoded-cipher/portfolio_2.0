@@ -124,7 +124,8 @@ function Navbar() {
 
     const shortname = (name) => {
         if (name.length > 12) {
-            return name.split(' ')[0];
+            // return name.split(' ')[0];
+            return name.replace(/\s/g,'');
         } else {
             return name;
         }
