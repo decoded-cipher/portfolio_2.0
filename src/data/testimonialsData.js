@@ -13,7 +13,7 @@ export const testimonialsData = [
         id: 1,
         name: 'Bijoy Sijo',
         title: 'Director, Operations | GTech µLearn',
-        text: "It's a pleasure working with Arjun. From meeting him from the beginning of my community days to working together in a team, Arjun has been a great resource in the team, with his design and management skills.",
+        text: "It's a pleasure working with Arjun. From meeting him at the beginning of my community days to working together in a team, he has been a great resource in the team, with his design & management skills.",
         image: boy2
     },
     // {

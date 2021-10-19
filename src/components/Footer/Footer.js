@@ -6,7 +6,7 @@ import { headerData } from '../../data/headerData'
 function Footer() {
 
     const shortname = (name) => {
-        if(name.length > 15) {
+        if(name.length > 12) {
             return name.split(" ")[0]
         } else {
             return name

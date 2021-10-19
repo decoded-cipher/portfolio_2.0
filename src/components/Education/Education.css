@@ -174,7 +174,10 @@
 }
 
 @media screen and (max-width: 400px) {
-
+    .education-details > h5 {
+        font-size: 0.85rem;
+        line-height: 126%;
+    }
 }
   
 @media only screen and (min-device-width: 320px) and (max-device-width: 
