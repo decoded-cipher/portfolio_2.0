@@ -151,7 +151,7 @@ function Contacts() {
                     setOpen(false);
                 });
             } else {
-                setErrMsg('Invalid email');
+                setErrMsg('Invalid Email');
                 setOpen(true);
             }
         } else {
