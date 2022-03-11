@@ -12,7 +12,7 @@ export const blogData = [
         title: 'TENSOR PROCESSING UNITS: BOTH HISTORY AND APPLICATIONS',
         description: 'Google announced its Tensor Processing Units (TPU for short), in May 2016 as a Custom made Application Specific...',
         date: 'Apr 21, 2019',
-        image: 'https://blog.cloudware.bg/wp-content/uploads/2019/02/cpu_5.jpg',
+        image: 'https://storage.googleapis.com/kaggle-media/tpu/tpuv3angle.jpg',
         url: 'https://medium.com/@decoded_cipher/tensor-processing-units-both-history-and-applications-b3479d92a61d'
     },
     {

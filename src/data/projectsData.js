@@ -96,6 +96,15 @@ export const projectsData = [
         demo: '#',
         image: four
     },
+    {
+        id: 10,
+        projectName: 'Morse Code Converter',
+        projectDesc: 'A morse code generator that converts typed text to morse code & to its equivalent sounds.',
+        tags: ['Handlebars', 'Node.js'],
+        code: 'https://github.com/decoded-cipher/morsecode-converter',
+        demo: 'https://verbose-reflective-recorder.glitch.me/',
+        image: ten
+    },
 ]
 
 
