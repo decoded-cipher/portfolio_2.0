@@ -44,12 +44,12 @@ export const testimonialsData = [
     //     text: 'Ralph Lauren was one of the best things that ever happened to me. My portfolio made that dream happen. I owe you guys.',
     //     image: girl3
     // },
-    // {
-    //     id: 6,
-    //     name: 'Ross Geller',
-    //     title: 'Paleontologist',
-    //     text: "Be it 'Rocks' or 'Bones', you need a website to display it. This is it. Great work guys !",
-    //     image: boy3
-    // }
+    {
+        id: 6,
+        name: 'Adithyan Jayakumar',
+        title: 'Media Lead | GTech µLearn',
+        text: "His work while with me in GTech µLearn has been highly significant as he brought a lot of new ideas to the table while also being the most optimistic a person can be, not giving up even when the most strenuous of tasks showed up.",
+        image: boy3
+    }
 ]
 
