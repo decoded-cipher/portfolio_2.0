@@ -7,7 +7,7 @@ export const achievementData = {
     achievements : [
         {
             id : 1,
-            title : 'Microsoft Alpha Student Ambassador',
+            title : 'Microsoft Beta Student Ambassador',
             details : 'Learn Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future.',
             date : 'Aug 2020',
             field : 'Ambassador',
