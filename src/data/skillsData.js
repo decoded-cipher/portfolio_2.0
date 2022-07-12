@@ -4,24 +4,26 @@
     'Javascript',
     'Markdown',
     'Bootstrap',
+    'Tailwind',
     'Bulma',
     'Vue',
+    'Svelte',
     'Node JS',
     'Photoshop',
+    'Illustrator',
     'Figma',
     'Adobe XD',
-    'Illustrator',
     'Canva',
     'Microsoft Office',
     'C',
     'C++',
     'Python',
     'MySQL',
+    'Firebase',
     'MongoDB',
     'Git',
     'Docker',
     'AWS',
-    'Firebase'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

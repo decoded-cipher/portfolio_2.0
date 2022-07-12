@@ -4,7 +4,7 @@ export const educationData = [
         institution: 'Kristu Jyoti College of Management & Technology (MGU)',
         course: 'Master of Computer Application',
         startYear: '2020',
-        endYear: 'Present'
+        endYear: '2022'
     },
     {
         id: 2,
