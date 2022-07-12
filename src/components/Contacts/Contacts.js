@@ -14,7 +14,7 @@ import {
     FaStackOverflow,
     FaCodepen,
     FaInstagram,
-    FaGitlab,
+    // FaGitlab,
     FaMediumM,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
@@ -413,7 +413,7 @@ function Contacts() {
                                     <FaCodepen aria-label='CodePen' />
                                 </a>
                             )}
-                            {socialsData.gitlab && (
+                            {/* {socialsData.gitlab && (
                                 <a
                                     href={socialsData.gitlab}
                                     target='_blank'
@@ -422,7 +422,7 @@ function Contacts() {
                                 >
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
-                            )}
+                            )} */}
                         </div>
                     </div>
                 </div>

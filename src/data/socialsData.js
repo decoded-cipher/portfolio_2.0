@@ -1,7 +1,7 @@
 export const socialsData = {
     github: 'https://github.com/decoded-cipher',
     behance: 'https://www.behance.net/Decoded_Cipher',
-    linkedIn: 'https://linkedin.com/in/~arjunkrishna',
+    linkedIn: 'https://linkedin.com/in/-arjunkrishna/',
     instagram: 'https://www.instagram.com/decoded_cipher/',
     // codepen: 'https://codepen.io/',
     twitter: 'https://twitter.com/decoded_cipher',
