@@ -1,4 +1,6 @@
 /* eslint-disable */
+import React from 'react';
+
 import { BiShoppingBag, BiPencil } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
 // import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
