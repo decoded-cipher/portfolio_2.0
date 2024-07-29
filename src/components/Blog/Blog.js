@@ -45,11 +45,11 @@ function Blog() {
             {blogData.length > 0 && (
                 <div className="blog" id="blog" style={{backgroundColor: theme.secondary}}>
                     <div className="blog--header">
-                        <h1 style={{color: theme.primary}}>Blog</h1>
+                        <h1 style={{color: theme.primary}}>Blogs</h1>
                     </div>
                     <div className="blog--body">
                         <div className="blog--bodyContainer">
-                            {blogData.slice(0, 3).reverse().map(blog => (
+                            {blogData.slice(5, 9).reverse().map(blog => (
                                 <SingleBlog 
                                     theme={theme}
                                     title={blog.title}
@@ -63,7 +63,7 @@ function Blog() {
                             ))}
                         </div> 
 
-                        {blogData.length > 3 && (
+                        {blogData.length > 4 && (
                             <div className="blog--viewAll">
                                 <Link to="/blog">
                                     <button className={classes.viewAllBtn}>

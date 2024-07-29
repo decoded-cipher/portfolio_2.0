@@ -2,7 +2,7 @@ export const experienceData = [
     {
         id: 1,
         company: 'Airtory Interactive',
-        jobtitle: 'Software Engineer',
+        jobtitle: 'Software Development Engineer',
         startYear: 'Jun 2022',
         endYear: 'Present'
     },
