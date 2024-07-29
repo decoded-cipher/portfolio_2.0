@@ -46,7 +46,7 @@ export const blogData = [
         description: 'Even without proper access to resources, a super-nerd like me could attempt to resolve the issue. It\'s not always the lack of the right...',
         date: 'Apr 01, 2023',
         image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1',
-        url: 'https://medium.com/@decoded_cipher/introduction-to-quantum-computing-1f49d0c9732a'
+        url: 'https://blog.inovuslabs.org/mgu-result-scrapper/'
     },
     {
         id: 7,
@@ -70,7 +70,7 @@ export const blogData = [
         description: 'For Dev & DevOps geeks, ensuring that your application runs smoothly across different environments can often be a daunting task. A phrase...',
         date: 'Jul 10, 2024',
         image: 'https://c4.wallpaperflare.com/wallpaper/1010/207/702/docker-containers-minimalism-typography-wallpaper-preview.jpg',
-        url: 'https://blog.inovuslabs.org/restoring-inovus-blogs/'
+        url: 'https://blog.inovuslabs.org/docker-simplified/'
     },
 ]
 
