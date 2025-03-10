@@ -1,17 +1,27 @@
-import React,{ useContext} from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import { HiArrowRight } from "react-icons/hi";
 
 import './Blog.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { blogData } from '../../data/blogData'
+import { fetchCombinedBlogData } from '../../data/blogData'
 import SingleBlog from './SingleBlog/SingleBlog';
 
 
 function Blog() {
 
     const { theme } = useContext(ThemeContext);
+    const [combinedBlogData, setCombinedBlogData] = useState([]);
+
+    useEffect(() => {
+        const getBlogData = async () => {
+            let data = await fetchCombinedBlogData();
+            data = data.reverse().slice(0, 4);
+            setCombinedBlogData(data);
+        };
+        getBlogData();
+    }, []);
 
     const useStyles = makeStyles(() => ({
         viewAllBtn : {
@@ -42,14 +52,14 @@ function Blog() {
 
     return (
         <>
-            {blogData.length > 0 && (
+            {combinedBlogData.length > 0 && (
                 <div className="blog" id="blog" style={{backgroundColor: theme.secondary}}>
                     <div className="blog--header">
                         <h1 style={{color: theme.primary}}>Blogs</h1>
                     </div>
                     <div className="blog--body">
                         <div className="blog--bodyContainer">
-                            {blogData.slice(5, 9).reverse().map(blog => (
+                            {combinedBlogData.map(blog => (
                                 <SingleBlog 
                                     theme={theme}
                                     title={blog.title}
@@ -63,7 +73,7 @@ function Blog() {
                             ))}
                         </div> 
 
-                        {blogData.length > 4 && (
+                        {combinedBlogData && (
                             <div className="blog--viewAll">
                                 <Link to="/blog">
                                     <button className={classes.viewAllBtn}>

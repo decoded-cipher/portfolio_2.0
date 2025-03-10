@@ -1,37 +1,30 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Airtory Interactive',
-        jobtitle: 'Software Development Engineer',
-        startYear: 'Jun 2022',
+        company: 'Johnson & Johnson Services, Inc.',
+        jobtitle: 'Senior Fullstack Engineer',
+        startYear: 'Nov 2024',
         endYear: 'Present'
     },
     {
         id: 2,
-        company: 'Hackclub KJCMT',
-        jobtitle: 'Founder & Lead',
-        startYear: 'Aug 2021',
+        company: 'Airtory Interactive',
+        jobtitle: 'Software Development Engineer',
+        startYear: 'Jun 2022',
+        endYear: 'Nov 2024'
+    },
+    {
+        id: 3,
+        company: 'DevMorphix',
+        jobtitle: 'Founder & CTO',
+        startYear: 'Jan 2024',
         endYear: 'Present'
     },
     // {
     //     id: 3,
-    //     company: 'GTech µLearn',
-    //     jobtitle: 'Creative Lead | Media',
-    //     startYear: 'Aug 2021',
-    //     endYear: 'Present'
-    // },
-    {
-        id: 3,
-        company: 'Inovus Labs IEDC',
-        jobtitle: 'Mentor, Student Coordinator',
-        startYear: 'Jun 2020',
-        endYear: 'Present'
-    },
-    // {
-    //     id: 5,
-    //     company: 'TinkerHub KJCMT',
-    //     jobtitle: 'Technical Lead',
-    //     startYear: 'Jun 2021',
+    //     company: 'Inovus Labs IEDC',
+    //     jobtitle: 'Mentor, Student Coordinator',
+    //     startYear: 'Jun 2020',
     //     endYear: 'Present'
     // },
     {

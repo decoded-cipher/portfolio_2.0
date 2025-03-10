@@ -38,56 +38,34 @@ export const blogData = [
         date: 'May 10, 2019',
         image: 'https://c0.wallpaperflare.com/preview/355/109/197/quantum-computer-processor-computer-technology.jpg',
         url: 'https://medium.com/@decoded_cipher/introduction-to-quantum-computing-1f49d0c9732a'
-    },
-    
-    {
-        id: 6,
-        title: 'MGU Exam Result Announcement : A nightmare',
-        description: 'Even without proper access to resources, a super-nerd like me could attempt to resolve the issue. It\'s not always the lack of the right...',
-        date: 'Apr 01, 2023',
-        image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1',
-        url: 'https://blog.inovuslabs.org/mgu-result-scrapper/'
-    },
-    {
-        id: 7,
-        title: 'The story behind a simple, yet complicated Smart Door!',
-        description: 'Here\'s an interesting tale behind the development of an RFID-based Smart Access Door (frankly speaking, an over-engineered one), that we\'ve put together recently at Inovus Labs...',
-        date: 'Aug 21, 2023',
-        image: 'https://images.unsplash.com/photo-1553341640-6b28ff92098a',
-        url: 'https://blog.inovuslabs.org/inovus-smart-door/'
-    },
-    {
-        id: 8,
-        title: 'Rising from the Ashes: Restoring Inovus Blogs Post-Termination',
-        description: 'Here\'s how we managed to recover the contents of a blog hosted on an AWS EC2 instance after being wrongfully terminated...',
-        date: 'Nov 04, 2023',
-        image: 'https://images.unsplash.com/photo-1591913139332-f8172ef511da',
-        url: 'https://blog.inovuslabs.org/restoring-inovus-blogs/'
-    },
-    {
-        id: 9,
-        title: 'It works on my machine... Not on yours... But why? Let\'s talk Docker!',
-        description: 'For Dev & DevOps geeks, ensuring that your application runs smoothly across different environments can often be a daunting task. A phrase...',
-        date: 'Jul 10, 2024',
-        image: 'https://c4.wallpaperflare.com/wallpaper/1010/207/702/docker-containers-minimalism-typography-wallpaper-preview.jpg',
-        url: 'https://blog.inovuslabs.org/docker-simplified/'
-    },
-]
+    }
+];
 
+const INOVUS_BLOG_URL = 'https://blog.inovuslabs.org/ghost/api/content/posts/?key=de858d77141cc957615e54f70b&filter=authors:arjun&fields=title,custom_excerpt,excerpt,published_at,url,feature_image';
 
+export const fetchCombinedBlogData = async () => {
+    try {
+        const response = await fetch(INOVUS_BLOG_URL);
+        const data = await response.json();
+        const externalBlogs = data.posts.map(post => ({
+            id: post.id,
+            title: post.title,
+            description: post.custom_excerpt || post.excerpt,
+            date: formattedDate(post.published_at),
+            image: post.feature_image,
+            url: post.url
+        }));
+        
+        const combinedBlogs = [...blogData, ...externalBlogs];
+        combinedBlogs.sort((a, b) => new Date(a.date) - new Date(b.date));
+        return combinedBlogs;
+    } catch (error) {
+        console.error('Error fetching external blogs:', error);
+        return blogData;
+    }
+};
 
-
-// Do not remove any fields.
-// Leave it blank instead as shown below.
-
-
-/* 
-{
-    id: 1,
-    title: 'Car Pooling System',
-    description: '',
-    date: 'Oct 1, 2020',
-    image: '',
-    url: 'https://preview.colorlib.com/theme/rezume/'
-}, 
-*/
+const formattedDate = (date) => {
+    const d = new Date(date);
+    return d.toDateString().slice(4);
+};

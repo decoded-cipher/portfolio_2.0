@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useState, useEffect, useContext } from 'react';
 import { Helmet } from 'react-helmet'
 import { Grid } from '@material-ui/core'
 import { Link } from 'react-router-dom'
@@ -8,15 +8,24 @@ import { AiOutlineHome } from "react-icons/ai";
 import './BlogPage.css'
 import { SingleBlog } from '../../components'
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { blogData } from '../../data/blogData'
+import { fetchCombinedBlogData } from '../../data/blogData'
 import { headerData } from '../../data/headerData'
 
 function BlogPage() {
 
     const [search, setSearch] = useState('')
+    const [combinedBlogData, setCombinedBlogData] = useState([]);
     const { theme } = useContext(ThemeContext);
 
-    const filteredArticles = blogData.filter((blog) => {
+    useEffect(() => {
+        const getBlogData = async () => {
+            const data = await fetchCombinedBlogData();
+            setCombinedBlogData(data);
+        };
+        getBlogData();
+    }, []);
+
+    const filteredArticles = combinedBlogData.filter((blog) => {
         const content = blog.title + blog.description + blog.date
         return content.toLowerCase().includes(search.toLowerCase())
     })

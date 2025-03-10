@@ -8,6 +8,9 @@ import afterEffects from '../assets/svg/skills/after-effects.svg'
 import css from '../assets/svg/skills/css.svg'
 import angular from '../assets/svg/skills/angular.svg'
 import javascript from '../assets/svg/skills/javascript.svg'
+import rabbitmq from '../assets/svg/skills/rabbitmq.svg'
+import kafka from '../assets/svg/skills/kafka.svg'
+import honoJS from '../assets/svg/skills/honoJS.svg'
 import nextJS from '../assets/svg/skills/nextJS.svg'
 import nuxtJS from '../assets/svg/skills/nuxtJS.svg'
 import nodeJS from '../assets/svg/skills/nodeJS.svg'
@@ -24,7 +27,7 @@ import mongoDB from '../assets/svg/skills/mongoDB.svg'
 import mysql from '../assets/svg/skills/mysql.svg'
 import postgresql from '../assets/svg/skills/postgresql.svg'
 import tailwind from '../assets/svg/skills/tailwind.svg'
-import vitejs from '../assets/svg/skills/vitejs.svg'
+import vite from '../assets/svg/skills/vitejs.svg'
 import vuetifyjs from '../assets/svg/skills/vuetifyjs.svg'
 import c from '../assets/svg/skills/c.svg'
 import cplusplus from '../assets/svg/skills/cplusplus.svg'
@@ -41,6 +44,10 @@ import ruby from '../assets/svg/skills/ruby.svg'
 import swift from '../assets/svg/skills/swift.svg'
 import adobeaudition from '../assets/svg/skills/adobeaudition.svg'
 import aws from '../assets/svg/skills/aws.svg'
+import cloudflare from '../assets/svg/skills/cloudflare.svg'
+import prisma from '../assets/svg/skills/prisma.svg'
+import redis from '../assets/svg/skills/redis.svg'
+import arduino from '../assets/svg/skills/arduino.svg'
 import deno from '../assets/svg/skills/deno.svg'
 import django from '../assets/svg/skills/django.svg'
 import firebase from '../assets/svg/skills/firebase.svg'
@@ -102,13 +109,21 @@ export const skillsImage = (skill) => {
             return javascript;
         case 'next js':
             return nextJS;
+        case 'hono js':
+            return honoJS;
         case 'nuxt js':
             return nuxtJS;
         case 'node js':
             return nodeJS;
         case 'react':
             return react;
-        case 'svelte':
+        case 'rabbitmq':
+            return rabbitmq;
+        case 'kafka':
+            return kafka;
+        case 'react native':
+            return react;
+        case 'svelte kit':
             return svelte;
         case 'typescript':
             return typescript;
@@ -118,7 +133,7 @@ export const skillsImage = (skill) => {
             return bootstrap;
         case 'bulma':
             return bulma;
-        case 'capacitorjs':
+        case 'capacitor js':
             return capacitorjs;
         case 'coffeescript':
             return coffeescript;
@@ -132,8 +147,8 @@ export const skillsImage = (skill) => {
             return postgresql;
         case 'tailwind':
             return tailwind;
-        case 'vitejs':
-            return vitejs;
+        case 'vite':
+            return vite;
         case 'vuetifyjs':
             return vuetifyjs;
         case 'c':
@@ -166,6 +181,14 @@ export const skillsImage = (skill) => {
             return adobeaudition;
         case 'aws':
             return aws;
+        case 'cloudflare':
+            return cloudflare;
+        case 'prisma':
+            return prisma;
+        case 'redis':
+            return redis;
+        case 'arduino':
+            return arduino;
         case 'deno':
             return deno;
         case 'django':
