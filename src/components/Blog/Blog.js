@@ -66,7 +66,7 @@ function Blog() {
                                     desc={blog.description}
                                     date={blog.date}
                                     image={blog.image}
-                                    url={blog.url}
+                                    url={blog.url + '?ref=https://arjunkrishna.dev'}
                                     key={blog.id}
                                     id={blog.id}
                                 />
