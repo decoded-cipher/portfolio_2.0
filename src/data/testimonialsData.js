@@ -14,22 +14,29 @@ export const testimonialsData = [
         name: 'Bijoy Sijo',
         title: 'Director, Operations | GTech µLearn',
         text: "It's a pleasure working with Arjun. From meeting him at the beginning of my community days to working together in a team, he has been a great resource in the team, with his design & management skills.",
+        image: boy1
+    },
+    {
+        id: 2,
+        name: 'Nikhil T Das',
+        title: 'STEM Mentor',
+        text: "I had the privilege of working alongside Arjun at Inovus Labs. His passion for software development is truly inspiring. He is deeply committed to producing the best possible work and consistently goes the extra mile. I highly recommend him for any development position.",
         image: boy2
     },
-    // {
-    //     id: 2,
-    //     name: 'Monica Geller',
-    //     title: 'Head Chef',
-    //     text: "This is the only thing that I didn't have to spend time to sort out. It's tidy all by itself.",
-    //     image: girl2
-    // },
     {
         id: 3,
         name: 'Thomas Zachariah',
         title: 'Founder Head & Lead EFL Coach | bics4career',
         text: "A youth with lot of innovative ideas. Vibrant as well. Needs more experiences to expolore further. Arjun is a promising budding young man with leadership skills.",
-        image: boy1
+        image: boy3
     },
+    {
+        id: 4,
+        name: 'Adithyan Jayakumar',
+        title: 'Media Lead | GTech µLearn',
+        text: "His work while with me in GTech µLearn has been highly significant as he brought a lot of new ideas to the table while also being the most optimistic a person can be, not giving up even when the most strenuous of tasks showed up.",
+        image: boy2
+    }
     // {
     //     id: 4,
     //     name: 'Joey Tribbiani',
@@ -44,12 +51,5 @@ export const testimonialsData = [
     //     text: 'Ralph Lauren was one of the best things that ever happened to me. My portfolio made that dream happen. I owe you guys.',
     //     image: girl3
     // },
-    {
-        id: 6,
-        name: 'Adithyan Jayakumar',
-        title: 'Media Lead | GTech µLearn',
-        text: "His work while with me in GTech µLearn has been highly significant as he brought a lot of new ideas to the table while also being the most optimistic a person can be, not giving up even when the most strenuous of tasks showed up.",
-        image: boy3
-    }
 ]
 

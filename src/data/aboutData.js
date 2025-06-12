@@ -1,6 +1,6 @@
 export const aboutData = {
-    title: "Who I am",
-    description1: "I write code by the name Decoded_Cipher, but Arjun Krishna is the title of my human reference.",
-    description2: "During the day, I'm one among many Post-Graduation Students at Kristu Jyoti Campus. But in the evenings, I work on freelance projects & utilize the time to built my own projects. I spent my leisure hours writing articles & solving Rubik Cubes. Right now I'm also trying a hand at DevOps & Python. I love to learn and explore new arenas.",
+    title: "About Me",
+    description1: "A developer by day and a curious builder by night — exploring systems that scale, tools that empower, and ideas that challenge convention. A regular in the open-source world, actively building and mentoring at Inovus Labs, and constantly experimenting with blockchain, IoT, and cloud-native architectures.",
+    description2: "Passionate about clean design, developer experience, and real-world impact. In between, you'll find me writing, designing interfaces, or practicing martial arts to stay grounded and sharp.",
     image: 1
 }

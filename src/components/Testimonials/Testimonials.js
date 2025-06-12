@@ -14,7 +14,7 @@ function Testimonials() {
     const sliderRef = useRef();
 
     const settings = {
-        dots: true,
+        // dots: true,
         adaptiveHeight: true,
         infinite: true,
         speed: 800,
