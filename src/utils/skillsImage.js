@@ -82,6 +82,12 @@ import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
+import ansible from '../assets/svg/skills/ansible.svg'
+import jenkins from '../assets/svg/skills/jenkins.svg'
+import terraform from '../assets/svg/skills/terraform.svg'
+import ethereum from '../assets/svg/skills/ethereum.svg'
+import solidity from '../assets/svg/skills/solidity.svg'
+import raspberryPi from '../assets/svg/skills/raspberryPi.svg'
 
 
 export const skillsImage = (skill) => {
@@ -187,8 +193,6 @@ export const skillsImage = (skill) => {
             return prisma;
         case 'redis':
             return redis;
-        case 'arduino':
-            return arduino;
         case 'deno':
             return deno;
         case 'django':
@@ -253,6 +257,20 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'ansible':
+            return ansible;
+        case 'jenkins':
+            return jenkins;
+        case 'terraform':
+            return terraform;
+        case 'ethereum':
+            return ethereum;
+        case 'solidity':
+            return solidity;
+        case 'arduino':
+            return arduino;
+        case 'raspberry pi':
+            return raspberryPi;
         default:
             break;
     }

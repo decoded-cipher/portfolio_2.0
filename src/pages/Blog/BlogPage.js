@@ -30,6 +30,11 @@ function BlogPage() {
         return content.toLowerCase().includes(search.toLowerCase())
     })
 
+    const formattedDate = (date) => {
+        const options = { year: 'numeric', month: 'short', day: 'numeric' };
+        return new Date(date).toLocaleDateString('en-US', options);
+    }
+
 
     const useStyles = makeStyles((t) => ({
         search : {
@@ -99,9 +104,9 @@ function BlogPage() {
                                 theme={theme}
                                 title={blog.title}
                                 desc={blog.description}
-                                date={blog.date}
+                                date={formattedDate(blog.date)}
                                 image={blog.image}
-                                url={blog.url}
+                                url={blog.url + '?utm_source=https://arjunkrishna.dev'}
                                 key={blog.id}
                                 id={blog.id}
                             />

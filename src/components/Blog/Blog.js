@@ -48,6 +48,11 @@ function Blog() {
         },
     }));
 
+    const formattedDate = (date) => {
+        const options = { year: 'numeric', month: 'short', day: 'numeric' };
+        return new Date(date).toLocaleDateString('en-US', options);
+    }
+
     const classes = useStyles();
 
     return (
@@ -64,9 +69,9 @@ function Blog() {
                                     theme={theme}
                                     title={blog.title}
                                     desc={blog.description}
-                                    date={blog.date}
+                                    date={formattedDate(blog.date)}
                                     image={blog.image}
-                                    url={blog.url + '?ref=https://arjunkrishna.dev'}
+                                    url={blog.url + '?utm_source=https://arjunkrishna.dev'}
                                     key={blog.id}
                                     id={blog.id}
                                 />

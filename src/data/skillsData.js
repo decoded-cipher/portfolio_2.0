@@ -7,6 +7,9 @@ export const skillsData = [
     'Vue',
     'Tailwind',
     'Docker',
+    'Ansible',
+    'Terraform',
+    'Jenkins',
     'AWS',
     'Azure',
     'MongoDB',
@@ -18,6 +21,8 @@ export const skillsData = [
     'Prisma',
     'Kafka',
     'RabbitMQ',
+    'Ethereum',
+    'Solidity',
     'Django',
     'Python',
     'Firebase',
@@ -28,6 +33,7 @@ export const skillsData = [
     'React Native',
     'Capacitor JS',
     'Arduino',
+    'Raspberry Pi',
     'Figma',
     'CSS',
     'HTML',
@@ -120,4 +126,10 @@ export const skillsData = [
     Tensorflow
     Webex
     Wordpress
+    Ansible
+    Jenkins
+    Terraform
+    Ethereum
+    Solidity
+    Raspberry Pi
 */
