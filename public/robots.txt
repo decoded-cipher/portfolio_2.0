@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://arjunkrishna.dev/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

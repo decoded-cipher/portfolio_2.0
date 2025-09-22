@@ -7,7 +7,7 @@ import './SingleBlog.css'
 function SingleBlog({ theme, title, desc, date, image, url, id }) {
     return (
         <Fade bottom>
-            <a className="singleBlog" key={id} href={url} target="_blank" rel="noreferrer" style={{backgroundColor: theme.primary400}}>
+            <a className="singleBlog" href={url} target="_blank" rel="noreferrer" style={{backgroundColor: theme.primary400}}>
                 <div className="singleBlog--image" style={{backgroundColor: theme.secondary}}>
                     <img src={image ? image : placeholder} alt={title} />
                 </div>

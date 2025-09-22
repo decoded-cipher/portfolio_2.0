@@ -1,6 +1,7 @@
 {
   "short_name": "Arjun Krishna",
-  "name": "Arjun Krishna",
+  "name": "Arjun Krishna - Software Engineer | System Design & Distributed Systems",
+  "description": "Software Engineer experienced in System Design, Distributed Systems, and Software Architecture. Skilled in building scalable applications, architecting reliable backends, and designing event-driven systems.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +19,14 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["personal", "portfolio", "developer" ],
+  "related_applications": [],
+  "prefer_related_applications": false
 }

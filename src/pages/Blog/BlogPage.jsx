@@ -99,7 +99,7 @@ function BlogPage() {
                 </div>
                 <div className="blogs--container">
                     <Grid className="blog-grid" container direction="row" alignItems="center" justifyContent="center">
-                        {filteredArticles.reverse().map(blog => (
+                        {filteredArticles.reverse().map((blog, index) => (
                             <SingleBlog 
                                 theme={theme}
                                 title={blog.title}
@@ -107,7 +107,7 @@ function BlogPage() {
                                 date={formattedDate(blog.date)}
                                 image={blog.image}
                                 url={blog.url + '?utm_source=https://arjunkrishna.dev'}
-                                key={blog.id}
+                                key={`${blog.id}-${index}`}
                                 id={blog.id}
                             />
                         ))}
