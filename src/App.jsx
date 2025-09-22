@@ -1,6 +1,8 @@
 // import React, { useContext } from 'react';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 // import { ThemeContext } from './contexts/ThemeContext';
 import { Main, BlogPage, ProjectPage } from './pages'
@@ -23,6 +25,8 @@ function App() {
         </Switch>
       </Router>
       <BackToTop />
+      <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
