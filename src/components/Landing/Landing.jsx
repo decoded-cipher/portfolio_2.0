@@ -144,8 +144,9 @@ function Landing() {
                 </div>
                 <img
                     src={headerData.image}
-                    alt=''
+                    alt='Arjun Krishna - Software Engineer'
                     className='landing--img'
+                    fetchPriority="high"
                     style={{
                         opacity: `${drawerOpen ? '0' : '1'}`,
                         borderColor: theme.secondary,
