@@ -45,7 +45,7 @@ function BlogPage() {
             border: 'none',
             borderRadius: '20px',
             padding: '0.95rem 1rem',
-            fontFamily: "'Noto Sans TC', sans-serif",
+            fontFamily: "'Noto Sans Malayalam', sans-serif",
             fontWeight: 500,
             fontSize: '0.9rem',  
             backgroundColor: theme.secondary, 
