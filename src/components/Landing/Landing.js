@@ -13,7 +13,7 @@ import {
     FaLinkedin,
     FaGithub,
     FaYoutube,
-    FaBlogger,
+    FaRss,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -127,16 +127,16 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.blogger && (
+                        {socialsData.rss && (
                             <a
-                                href={socialsData.blogger}
+                                href={socialsData.rss}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaBlogger
+                                <FaRss
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='Blogger'
+                                    aria-label='RSS'
                                 />
                             </a>
                         )}
