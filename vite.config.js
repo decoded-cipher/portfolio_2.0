@@ -9,7 +9,28 @@ export default defineConfig({
     open: true
   },
   build: {
-    outDir: 'build'
+    outDir: 'build',
+    minify: 'terser',
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom', 'react-router-hash-link'],
+          ui: ['@material-ui/core', '@material-ui/icons', 'react-icons'],
+          utils: ['axios', 'validator', 'web-vitals']
+        }
+      }
+    },
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true
+      }
+    }
   },
-  publicDir: 'public'
+  publicDir: 'public',
+  css: {
+    devSourcemap: false
+  }
 })
