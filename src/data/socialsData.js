@@ -10,5 +10,5 @@ export const socialsData = {
     // stackOverflow: 'https://stackoverflow.com/users/11622116/decoded-cipher',
     gitlab: 'https://gitlab.com/decoded-cipher',
     // youtube: 'https://youtube.com/'
-    rss: 'https://blog.inovuslabs.org/author/arjun/rss/',
+    rss: 'https://blog.inovuslabs.org/author/arjun',
 }
